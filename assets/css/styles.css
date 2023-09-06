@@ -725,7 +725,7 @@ footer{
   }
 
   /* Skills adjustments */
-  .icon {
+  .icon, .icon-rep {
     width: 3.5rem;
     height: 3.5rem;
   }
