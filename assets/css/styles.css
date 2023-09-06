@@ -693,3 +693,50 @@ footer{
     max-width: 17.75rem;
   }
 }
+
+/* Add this at the end of your existing CSS */
+
+@media screen and (max-width: 768px) {
+  /* Modify styles for smaller screens here */
+
+  /* Navbar adjustments */
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul {
+    top: 60px; /* Adjust the top offset */
+  }
+
+  /* Hero Section adjustments */
+  .hero img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .bio {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  /* More About Me adjustments */
+  .more-about {
+    padding: 1rem;
+  }
+
+  /* Skills adjustments */
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* Projects adjustments */
+  .project-container {
+    width: 100%;
+  }
+
+  /* Contact adjustments */
+  .contact-form-container {
+    max-width: 100%;
+  }
+}
