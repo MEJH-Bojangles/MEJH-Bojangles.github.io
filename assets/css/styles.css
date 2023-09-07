@@ -104,23 +104,11 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
+.mobile-menu-icon {
+  display: none; /* Initially hidden for larger screens */
+  font-size: 24px;
   cursor: pointer;
-  display: none;
 }
-
-.dark-mode #burger-menu{
-  background-color: var(--darkmode-bkg);
-  color: white;
-  transition: var(--transition);
-}
-
-
 
  /* || HERO SECTION */
  .hero{
@@ -593,32 +581,35 @@ footer{
 /* || MEDIA QUERYS */
 @media screen and (max-width: 768px){
   /* Nav Bar */
-  nav{
-    padding: 1.5rem 1rem;
+  .mobile-menu-icon {
+    display: block; /* Show the mobile menu icon */
   }
 
+  /* Hide the regular navigation for smaller screens */
   nav ul{
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
-    top: 86px;
-    left: 10%;
-    width: 80%;
+    top: 77px;
+    right: 1%;
+    width: 25%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
-  }
-  
-  nav ul li {
-    margin: 8px;
+    padding: 1rem;
   }
 
-  .burger-menu {
-    display: block;
+  .dark-mode nav ul{
+    background-color: var(--darkmode-bkg);
   }
 
   nav ul.show{
     transform: translateX(0);
+  }
+
+  /* Additional styling for the mobile menu icon */
+  .mobile-menu-icon:hover {
+    color: var(--secondary-color);
   }
   
   /* Hero Menu */
@@ -629,19 +620,21 @@ footer{
   }
 
   .hero img{
+    margin-top: 4.5rem;
     height: 60%;
     width: 60%;
   }
 
   .bio {
     margin-top: 1.5rem;
-    width: 20.5rem;
+    width: 55%;
   }
 
   /* More About Me */
   .more-about {
     margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    margin: 1rem;
+    padding: 1.25rem 2rem;
   }
 
   .more-about h2 {
@@ -657,6 +650,7 @@ footer{
     width: 5.875rem;
     height: 5.25rem;
     font-size: 1rem;
+    flex-direction: column;
   }
 
   /* Projects */

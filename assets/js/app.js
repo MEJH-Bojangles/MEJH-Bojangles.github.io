@@ -9,25 +9,27 @@ scrollUp.addEventListener("click", () => {
     });
 });
 
-/* || BURGER MENU */
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+const navigation = document.querySelector(".navigation");
 
-burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
+mobileMenuIcon.addEventListener("click", () => {
+  navigation.classList.toggle("show");
 });
 
-// close hamburger menu when a link is clicked
+// Close the mobile menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach((link) => {
+  link.addEventListener('click', () => {
+    navigation.classList.remove('show');
+  });
+});
 
-// select nav links
-const navLink = document.querySelectorAll(".nav-link");
+// Hide the mobile menu when the screen size is larger than 768px
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    navigation.classList.remove("show");
+  }
+});
 
-navLink.forEach((link) =>
-link.addEventListener("click", () => {
-    ul.classList.remove("show");
-})
-);
 
 //sticky nav bar offset
 const navBarHeight = document.querySelector("nav").offsetHeight;
