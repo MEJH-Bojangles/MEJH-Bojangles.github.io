@@ -167,7 +167,6 @@ nav ul li {
 
 .skills-wrapper img{
   padding: 1.25rem;
-  position: relative;
 }
 
 .img-container{
@@ -182,6 +181,13 @@ width: 100%;
 .rep-container{
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.skill-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .icon,
@@ -193,6 +199,11 @@ width: 100%;
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+.middle-skills{
+  margin-left: -150px;
+  margin-right: -150px;
 }
 
 .dark-mode .icon{
@@ -627,7 +638,7 @@ footer{
 
   .bio {
     margin-top: 1.5rem;
-    width: 55%;
+    width: 80%;
   }
 
   /* More About Me */
@@ -646,12 +657,14 @@ footer{
   }
 
   /* Skills */
-  .icon, .icon-rep {
-    width: 5.875rem;
-    height: 5.25rem;
-    font-size: 1rem;
-    flex-direction: column;
-  }
+
+.img-container, .rep-container{
+  flex-direction: column;
+}
+.middle-skills{
+  margin: auto;
+}
+
 
   /* Projects */
   .projects-container {
@@ -669,23 +682,15 @@ footer{
   
 }
 
-/* @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
+@media screen and (max-width: 1100px) {
+.img-container, .rep-container{
+  flex-direction: column;
+}
 
-  .bio {
-    width: 18.3rem;
-  }
+.middle-skills{
+  margin: auto;
+}
 
-  .project-container {
-    width: 17.875rem;
-  }
-
-  .contact-form-container {
-    max-width: 17.75rem;
-  }
-} */
+}
 
 
