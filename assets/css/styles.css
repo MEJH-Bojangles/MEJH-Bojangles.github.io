@@ -502,8 +502,8 @@ footer{
 }
 
 .up-arrow {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 100%;
+  height: 100%;
 }
 
 /* || DARK MODE TOGGLE */
@@ -678,6 +678,12 @@ footer{
   /* Contact */
   .contact-form-container {
     max-width: 23.75rem;
+  }
+
+  .up-arrow{
+    width: 75%;
+    height: 75%;
+    margin-right: -5px;
   }
   
 }
