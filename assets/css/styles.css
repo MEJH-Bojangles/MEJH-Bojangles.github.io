@@ -251,6 +251,18 @@ nav ul li {
   background-color: #039be5;
 }
 
+.rep-react {
+  background-color: #80deea;
+}
+
+.rep-node {
+  background-color: #21a366;
+}
+
+.rep-psql {
+  background-color: #0277bd;
+}
+
 .icon:hover,
 .icon-rep:hover {
   opacity: 0;
