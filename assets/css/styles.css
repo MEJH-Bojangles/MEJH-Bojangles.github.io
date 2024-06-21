@@ -6,7 +6,7 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #DCB3B1;
+  --bg-color: ##dbc5c370;
   --primary-color: #f2dbf4;
   --secondary-color: #855572;
   --primary-shadow: #6b455c;
@@ -48,29 +48,59 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background-color: #DCB3B1;
+  background-color: #dbc5c370;
 }
+
+/* || DRIP */
+
+.nav-img-orange {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41%;
+  height: 155%;
+  z-index: 4;
+}
+
+.nav-img-darkpurple {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67%;
+  height: 250%;
+  z-index: 3;
+}
+
+.nav-img-lightpurple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 200%;
+  z-index: 2;
+}
+
+.nav-img-orange2 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  width: 100%;
+  height: 185%;
+  z-index: 1;
+}
+
 
 /* || NAV BAR */
 nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 145%;
-  z-index: -1;
+  z-index: 5;
 
 }
 
@@ -81,6 +111,8 @@ nav {
 
 nav h1 {
   color: var(--primary-color);
+  z-index: 5;
+
 }
 
 .dark-mode h1 {
@@ -90,6 +122,8 @@ nav h1 {
 
 nav a {
   color: var(--primary-color);
+  z-index: 5;
+
 }
 
 .dark-mode a {
@@ -103,10 +137,14 @@ nav a:hover {
 nav ul {
   display: flex;
   gap: 1.9rem;
+  z-index: 5;
+
 }
 
 nav ul li {
   font-weight: var(--bold-font);
+  z-index: 5;
+
 }
 
 .mobile-menu-icon {
@@ -125,15 +163,17 @@ nav ul li {
   gap: 5rem;
   max-width: 68.75rem;
   margin: auto;
-  margin-top: 23px;
+  margin-top: 40px;
+  margin-bottom: 66px;
 }
 
-.hero img {
+.hero-img {
   height: 40%;
   width: 40%;
   margin: .5rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  z-index: 1;
 }
 
 .bio {
@@ -142,6 +182,7 @@ nav ul li {
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   background-color: white;
+  z-index: 3;
 }
 
 .dark-mode .bio {
@@ -166,6 +207,8 @@ nav ul li {
   margin: 4rem auto;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 77px;
+
 }
 
 .skill-header {
@@ -275,7 +318,7 @@ nav ul li {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: -3rem;
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 50px;
 }
 
 .dark-mode .projects {
@@ -362,6 +405,7 @@ nav ul li {
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   background-color: white;
+  margin-bottom: 77px;
 
 }
 

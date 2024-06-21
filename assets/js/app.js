@@ -2,11 +2,11 @@
 const scrollUp = document.querySelector("#scroll-up");
 
 scrollUp.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-    });
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
 
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
@@ -32,31 +32,34 @@ window.addEventListener("resize", () => {
 
 
 //sticky nav bar offset
-const navBarHeight = document.querySelector("nav").offsetHeight;
+// Function to create an offset for anchor links
+function offsetAnchor() {
+  const offset = 100; // Adjust this value to your header height
 
-document.querySelectorAll('.nav-link').forEach((link) => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
+  // Attach click event listener to each navigation link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (event) {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+      // Get the target element
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
 
-        if (targetSection) {
-            const targetOffsetTop = targetSection.offsetTop - navBarHeight;
-
-            window.scrollTo({
-                top: targetOffsetTop,
-                left: 0,
-                behavior: 'smooth'
-            });
-
-            ul.classList.remove('show');
-        }
+      // Scroll to the target element with offset
+      window.scrollTo({
+        top: targetElement.offsetTop - offset,
+        behavior: 'smooth'
+      });
     });
-});
+  });
+}
+
+// Call the function when the document is loaded
+document.addEventListener('DOMContentLoaded', offsetAnchor);
 
 
 function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
