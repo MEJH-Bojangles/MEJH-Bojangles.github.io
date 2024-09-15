@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--CSS Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/base-styles.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/more-about.css" />
+  <link rel="stylesheet" href="assets/css/nav-hero.css" />
+  <link rel="stylesheet" href="assets/css/peripherals.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+  <link rel="stylesheet" href="assets/css/skills.css" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
@@ -27,12 +33,15 @@
 
 <body>
   <!-- Navbar -->
-  <nav>
-    <img src="assets/images/Orange.png" class="nav-img-orange">
-    <img src="assets/images/DarkPurple.png" class="nav-img-darkpurple">
-    <img src="assets/images/LightPurple.png" class="nav-img-lightpurple">
-    <img src="assets/images/Orange2.png" class="nav-img-orange2">
+  <div class="bkg-drip">
+    <img src="assets/images/6.png" class="bkg-img-6">
+    <img src="assets/images/5.png" class="bkg-img-5">
+    <img src="assets/images/4.png" class="bkg-img-4">
+    <img src="assets/images/3.png" class="bkg-img-3">
+    <img src="assets/images/2.png" class="bkg-img-2">
+  </div>
 
+  <nav>
     <h1>Melinda "Mindy" Holtzer</h1>
     <div class="mobile-menu-icon">
       <i class="fas fa-bars"></i>
@@ -158,8 +167,8 @@
         <h3 class="project-title">Project Manager</h3>
         <p class="project-details">
           A custom full-stack web service for managing projects, clients, and staff. Each project is linked to a
-          corresponding client and staff member. The system features a fully integrated database and an admin login
-          system. Built with a React frontend, Python/Flask backend, PostgreSQL database, and SQLAlchemy ORM.
+          corresponding client and staff member. The system features a fully integrated database. Built with a React
+          frontend, Python/Flask backend, PostgreSQL database, and SQLAlchemy ORM.
         </p>
         <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
       </div>
@@ -294,32 +303,8 @@
 
     <!-- Scroll to Top Button -->
     <i class="scroll-up" id="scroll-up">
-      <img src="assets/icons/icons8-up-arrow-64.png" class="socicon up-arrow" alt="scroll-up" />
     </i>
 
-    <!-- Dark Mode Toggle -->
-    <div class="darkmode-toggle">
-      <input type="checkbox" onclick="darkMode()" id="darkmode-toggle" />
-      <label for="darkmode-toggle">
-        <svg class="sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M10 16.584V18.9996C10 20.1042 10.8954 20.9996 12 20.9996C13.1046 20.9996 14 20.1042 14 18.9996L14 16.584M12 3V4M18.3643 5.63574L17.6572 6.34285M5.63574 5.63574L6.34285 6.34285M4 12H3M21 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
-              stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </g>
-        </svg>
-        <svg class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.0174 2.80157C6.37072 3.29221 2.75 7.22328 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C16.7767 21.25 20.7078 17.6293 21.1984 12.9826C19.8717 14.6669 17.8126 15.75 15.5 15.75C11.4959 15.75 8.25 12.5041 8.25 8.5C8.25 6.18738 9.33315 4.1283 11.0174 2.80157ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C12.7166 1.25 13.0754 1.82126 13.1368 2.27627C13.196 2.71398 13.0342 3.27065 12.531 3.57467C10.8627 4.5828 9.75 6.41182 9.75 8.5C9.75 11.6756 12.3244 14.25 15.5 14.25C17.5882 14.25 19.4172 13.1373 20.4253 11.469C20.7293 10.9658 21.286 10.804 21.7237 10.8632C22.1787 10.9246 22.75 11.2834 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12Z"
-              fill="#ffffff"></path>
-          </g>
-        </svg> </label>
-    </div>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>

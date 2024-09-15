@@ -1,0 +1,104 @@
+/* || SKILLS SECTION */
+.skills {
+    max-width: 68.75rem;
+    margin: 4rem auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 77px;
+
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.rep-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon,
+.icon-rep {
+    background-color: #fff;
+    width: 11.875rem;
+    height: 11.25rem;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.middle-skills {
+    margin-left: -150px;
+    margin-right: -150px;
+}
+
+.icon-rep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.rep-py {
+    background-color: #21a0e0;
+}
+
+.rep-git {
+    background-color: #f4511e;
+}
+
+.rep-js {
+    background-color: #ffd600;
+    color: black;
+}
+
+.rep-html {
+    background-color: #ff6d00;
+}
+
+.rep-css {
+    background-color: #039be5;
+}
+
+.rep-react {
+    background-color: #80deea;
+}
+
+.rep-node {
+    background-color: #21a366;
+}
+
+.rep-psql {
+    background-color: #0277bd;
+}
+
+.icon:hover,
+.icon-rep:hover {
+    opacity: 0;
+    transition: var(--transition);
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* || VARIABLES */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: ##dbc5c370;
+  --primary-color: #f2dbf4;
+  --secondary-color: #855572;
+  --primary-shadow: #6b455c;
+  --secondary-shadow: #ae6137d6;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* || CSS RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #241723;
+}
+
+/* || MEDIA QUERYS */
+@media screen and (max-width: 768px) {
+
+  /* Nav Bar */
+  .mobile-menu-icon {
+    display: block;
+    /* Show the mobile menu icon */
+  }
+
+  /* Hide the regular navigation for smaller screens */
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 77px;
+    right: 1%;
+    width: 25%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    padding: 1rem;
+  }
+
+
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  /* Additional styling for the mobile menu icon */
+  .mobile-menu-icon:hover {
+    color: var(--secondary-color);
+  }
+
+  /* Hero Menu */
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+    margin-top: 4.5rem;
+    height: 60%;
+    width: 60%;
+  }
+
+  .bio {
+    margin-top: 1.5rem;
+    width: 80%;
+  }
+
+  /* More About Me */
+  .more-about {
+    margin-top: 2rem;
+    margin: 1rem;
+    padding: 1.25rem 2rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  /* Skills */
+
+  .img-container,
+  .rep-container {
+    flex-direction: column;
+  }
+
+  .middle-skills {
+    margin: auto;
+  }
+
+
+  /* Projects */
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+
+  /* Contact */
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+
+  .up-arrow {
+    width: 75%;
+    height: 75%;
+    margin-right: -5px;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  .img-container,
+  .rep-container {
+    flex-direction: column;
+  }
+
+  .middle-skills {
+    margin: auto;
+  }
+
+}

@@ -1,0 +1,142 @@
+/* || DRIP */
+
+.bkg-img-6,
+.bkg-img-5,
+.bkg-img-4,
+.bkg-img-3,
+.bkg-img-2 {
+    background-attachment: fixed;
+}
+
+.bkg-img-6,
+.bkg-img-5,
+.bkg-img-4,
+.bkg-img-3,
+.bkg-img-2 {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+
+.bkg-img-6 {
+    top: -53.5rem;
+    z-index: -6;
+}
+
+.bkg-img-5 {
+    top: -51.3rem;
+    z-index: -5;
+}
+
+.bkg-img-4 {
+    top: -49rem;
+    z-index: -4;
+}
+
+.bkg-img-3 {
+    top: -47rem;
+    z-index: -3;
+}
+
+.bkg-img-2 {
+    top: -54rem;
+    z-index: -2;
+}
+
+
+/* || NAV BAR */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    background-color: #241723;
+    height: 14px;
+
+}
+
+nav h1 {
+    color: var(--primary-color);
+    z-index: 5;
+
+}
+
+nav a {
+    color: var(--primary-color);
+    z-index: 5;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+    z-index: 5;
+
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+    z-index: 5;
+
+}
+
+.mobile-menu-icon {
+    display: none;
+    /* Initially hidden for larger screens */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* || HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 68.75rem;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 66px;
+}
+
+.hero-img {
+    height: 40%;
+    width: 40%;
+    margin: .5rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    z-index: 1;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    background-color: #eedaef;
+    z-index: 3;
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}

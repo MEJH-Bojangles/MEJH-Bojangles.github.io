@@ -59,6 +59,20 @@ function offsetAnchor() {
 document.addEventListener('DOMContentLoaded', offsetAnchor);
 
 
+// background scroll effect
+
+window.addEventListener('scroll', function () {
+  let scrollPosition = window.pageYOffset;
+
+  document.querySelector('.bkg-img-6').style.transform = `translateY(${scrollPosition * 1.37}px)`;
+  document.querySelector('.bkg-img-5').style.transform = `translateY(${scrollPosition * 1.27}px)`;
+  document.querySelector('.bkg-img-4').style.transform = `translateY(${scrollPosition * 1.17}px)`;
+  document.querySelector('.bkg-img-3').style.transform = `translateY(${scrollPosition * 1.07}px)`;
+  document.querySelector('.bkg-img-2').style.transform = `translateY(${scrollPosition * 0.97}px)`;
+});
+
+
+
 function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
